@@ -4,10 +4,21 @@ class WacliReadonly < Formula
   version "0.1.0"
   license "MIT"
 
-  url "https://github.com/regalstreak/wacli-readonly/releases/download/v#{version}/wacli-readonly-macos-universal.tar.gz"
-  sha256 "7f82ba98df4002fde03cdfb721265bd4a6390dd4e9d94fb9b906f85c22bb9ca6"
+  on_macos do
+    url "https://github.com/regalstreak/wacli-readonly/releases/download/v#{version}/wacli-readonly-macos-universal.tar.gz"
+    sha256 "7a72877ff5a4fa7d6126becea3637b4a52004222fbba202d581f5565f379c8f5"
+  end
 
-  depends_on :macos
+  on_linux do
+    on_intel do
+      url "https://github.com/regalstreak/wacli-readonly/releases/download/v#{version}/wacli-readonly-linux-amd64.tar.gz"
+      sha256 "77b2a31120fccccdeb5a30abbfd4bbf5a16b94db9cc8bb48afc80a6a2bc7761f"
+    end
+    on_arm do
+      url "https://github.com/regalstreak/wacli-readonly/releases/download/v#{version}/wacli-readonly-linux-arm64.tar.gz"
+      sha256 "8876b5ad7fa5a6678a4ee555abaeb4686c8b961996fe024633c5eddc6ba75538"
+    end
+  end
 
   def install
     bin.install "wacli-readonly"
