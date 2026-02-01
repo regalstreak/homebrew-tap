@@ -1,22 +1,22 @@
 class WacliReadonly < Formula
   desc "Read-only WhatsApp CLI - fork of wacli with send capabilities removed"
   homepage "https://github.com/regalstreak/wacli-readonly"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     url "https://github.com/regalstreak/wacli-readonly/releases/download/v#{version}/wacli-readonly-macos-universal.tar.gz"
-    sha256 "7a72877ff5a4fa7d6126becea3637b4a52004222fbba202d581f5565f379c8f5"
+    sha256 "0893fa12db5c6125b0d6a0963aa603ec7968bd77e16bf907ad4ca5ed4d9e2b45"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/regalstreak/wacli-readonly/releases/download/v#{version}/wacli-readonly-linux-amd64.tar.gz"
-      sha256 "77b2a31120fccccdeb5a30abbfd4bbf5a16b94db9cc8bb48afc80a6a2bc7761f"
+      sha256 "c84983ad1dc834be196802cb396c934b0fd7c34ec521408e22eb79fc86ef14da"
     end
     on_arm do
       url "https://github.com/regalstreak/wacli-readonly/releases/download/v#{version}/wacli-readonly-linux-arm64.tar.gz"
-      sha256 "8876b5ad7fa5a6678a4ee555abaeb4686c8b961996fe024633c5eddc6ba75538"
+      sha256 "74105590591a9660368ea48dd7c0add2bed65ca6dbb09998fb2141947b518294"
     end
   end
 
