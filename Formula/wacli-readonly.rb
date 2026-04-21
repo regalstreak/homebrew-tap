@@ -5,12 +5,12 @@
 class WacliReadonly < Formula
   desc "Read-only WhatsApp CLI for syncing and searching messages"
   homepage "https://github.com/regalstreak/wacli-readonly"
-  version "0.2.4"
+  version "0.7.0"
   license "MIT"
   depends_on :macos
 
-  url "https://github.com/regalstreak/wacli-readonly/releases/download/v0.2.4/wacli-readonly-macos-universal.tar.gz"
-  sha256 "2b2e2d75d3837f8ea10d0e72846f5357b61551086e45657f818808f3a239f815"
+  url "https://github.com/regalstreak/wacli-readonly/releases/download/v0.7.0/wacli-readonly-macos-universal.tar.gz"
+  sha256 "7e4a60a50e1af9b7300e00f16ba366ff9b7c698ad8c88bb852b849b4a70283c6"
 
   def install
     bin.install "wacli-readonly"
